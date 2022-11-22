@@ -30,7 +30,7 @@ components:
       name: paymentsTable
       gridItem:
         x: 0
-        'y': 0
+        'y': 2
         w: 16
         h: 24
         minH: 2
@@ -60,6 +60,28 @@ components:
       title: Payment
     actions: {}
     index: 1
+  - id: '16691253364710.9548605537396844'
+    definitionId: stringEdit
+    parentSlotId: '16691243124660.25320417590684463'
+    styles:
+      xl: {}
+    properties:
+      name: input
+      gridItem:
+        x: 0
+        'y': 0
+        w: 12
+        h: 2
+        minH: 2
+        maxH: 3
+        minW: 3
+        componentId: '16691253364710.9548605537396844'
+      labelConfig:
+        text: Check number
+        position: horizontal
+        align: left
+    actions: {}
+    index: 2
   - id: '16691243200330.5871056374315244'
     definitionId: atomicNumber
     styles:
