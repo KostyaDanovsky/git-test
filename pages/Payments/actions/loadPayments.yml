@@ -1,0 +1,89 @@
+id: '16691242992760.9261093379230991'
+name: loadPayments
+nameConfigured: true
+steps:
+  - id: '16691243002090.11966593150649985'
+    type: LOAD_COLLECTION
+    params:
+      - type: datasourceId
+        value: kXNmCC8v13
+        valueType: custom
+        mustSelectFirst: true
+      - type: resourceId
+        value: fe7d3030-3577-498a-b260-dfdfb5d93d63
+        valueType: custom
+        mustSelectFirst: true
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: sql
+        value: []
+        valueType: interpolatedValue
+      - type: additionalParams
+        value: []
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: false
+singleStep: true
+type:
+  returnType:
+    - name: id
+      type: number
+      humanizedName: Id
+      primaryKey: true
+    - name: check_number
+      type: string
+      humanizedName: Check number
+      primaryKey: true
+    - name: paid_at
+      type: date
+      humanizedName: Paid at
+      primaryKey: false
+    - name: amount
+      type: number
+      humanizedName: Amount
+      primaryKey: false
+  returnTypeName: Payments
+  returnValue: null
+  returnStepType: LOAD_COLLECTION
+  returnValueTypeSnapshot: array
+mode: auto
+modeConfigured: false
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadPayments.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadPayments.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadPayments.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+assigned: false
+parentPageId: '16691243124660.11434403062305742'
+index: 0
