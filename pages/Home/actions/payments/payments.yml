@@ -1,0 +1,36 @@
+id: '16691241943630.2559663323526957'
+name: payments
+nameConfigured: true
+steps:
+  - id: '16691241943630.9148826539664754'
+    type: draft
+    params: []
+    level: 0
+    fallthroughError: false
+    isChanged: false
+singleStep: true
+type:
+  returnType: []
+  returnValue: null
+  returnValueTypeSnapshot: 'null'
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: true
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.payments.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.payments.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.payments.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+assigned: false
+selected: false
+index: 1
