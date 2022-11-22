@@ -119,18 +119,6 @@ components:
       title: Category
     actions: {}
     index: 1
-  - id: '16691258467010.5281490312713495'
-    definitionId: text
-    parentSlotId: '2'
-    styles: {}
-    properties:
-      name: text
-      gridItem:
-        x: 0
-        'y': 20
-        w: 4
-        h: 1
-    index: 2
   - id: '16691241236530.5416591719793935'
     definitionId: atomicString
     parentSlotId: '16691230526440.30546987207199505'
