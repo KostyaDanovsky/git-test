@@ -30,7 +30,7 @@ components:
       name: paymentsTable
       gridItem:
         x: 0
-        'y': 0
+        'y': 2
         w: 16
         h: 24
         minH: 2
@@ -60,6 +60,52 @@ components:
       title: Payment
     actions: {}
     index: 1
+  - id: '16691247109870.39242927123783855'
+    definitionId: select
+    parentSlotId: '16691243124660.25320417590684463'
+    styles:
+      xl: {}
+    properties:
+      name: select
+      gridItem:
+        x: 0
+        'y': 0
+        w: 16
+        h: 2
+        minH: 2
+        maxH: 3
+        minW: 2
+        componentId: '16691247109870.39242927123783855'
+      options:
+        value:
+          - value: '103'
+            title: '103'
+            __UIBAKERY__SYSTEM_ID__: '1'
+          - value: '112'
+            title: '112'
+            __UIBAKERY__SYSTEM_ID__: '2'
+          - title: '114'
+            value: '114'
+            __UIBAKERY__SYSTEM_ID__: '16691247224770.11217938122225446'
+        dataValue: |-
+          [
+            {
+              value: 'option 1',
+              title: 'Option 1',
+            },
+            {
+              value: 'option 2',
+              title: 'Option 2',
+            },
+          ]
+        withData: false
+      value: '103'
+      labelConfig:
+        text: id
+        position: horizontal
+        align: left
+    actions: {}
+    index: 2
   - id: '16691243200330.5871056374315244'
     definitionId: atomicNumber
     styles:
