@@ -1,0 +1,166 @@
+slots:
+  - id: '16691243124660.6543817819287387'
+    name: content
+    parentPageId: '16691243124660.11434403062305742'
+  - id: '16691243124660.25320417590684463'
+    name: content
+    parentComponentId: '16691243124660.1809393539741797'
+  - id: '16691243200270.9946646200359923'
+    name: columns
+    parentComponentId: '16691243200270.3115700531703365'
+  - id: '16691243225070.5368886962907888'
+    name: structure
+    parentComponentId: '16691243225070.4245740568294929'
+components:
+  - id: '16691243124660.1809393539741797'
+    definitionId: grid
+    parentSlotId: '16691243124660.6543817819287387'
+    styles: {}
+    properties:
+      name: payments
+      pageTitle: '{{app.name}} - {{activeRoute.name}}'
+    index: 0
+  - id: '16691243200270.3115700531703365'
+    definitionId: smartTable
+    parentSlotId: '16691243124660.25320417590684463'
+    styles:
+      xl: {}
+    properties:
+      data: '{{actions.loadPayments.data}}'
+      name: paymentsTable
+      gridItem:
+        x: 0
+        'y': 0
+        w: 16
+        h: 24
+        minH: 2
+        minW: 4
+      title: Payments
+      showLoading:
+        withData: true
+        dataValue: '{{actions.loadPayments.loading}}'
+        value: false
+    actions: {}
+    index: 0
+  - id: '16691243225070.4245740568294929'
+    definitionId: form
+    parentSlotId: '16691243124660.25320417590684463'
+    styles:
+      xl: {}
+    properties:
+      entity: '{{ui.paymentsTable.selectedRow.data}}'
+      name: paymentsForm
+      gridItem:
+        x: 16
+        'y': 0
+        w: 8
+        h: 24
+        minH: 2
+        minW: 4
+      title: Payment
+    actions: {}
+    index: 1
+  - id: '16691243200330.5871056374315244'
+    definitionId: atomicNumber
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicNumber
+      prop: id
+      primaryKey: true
+      width: 60
+      filter: true
+    parentSlotId: '16691243200270.9946646200359923'
+    index: 0
+  - id: '16691243200330.4502349395199814'
+    definitionId: atomicString
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicString
+      prop: check_number
+      primaryKey: true
+      width: 120
+      filter: true
+    parentSlotId: '16691243200270.9946646200359923'
+    index: 1
+  - id: '16691243200330.17486899574289505'
+    definitionId: atomicDateTime
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicDateTime
+      prop: paid_at
+      primaryKey: false
+      timeFormat:
+        value: ''
+        dataValue: HH:mm
+        withData: false
+      width: 120
+      filter: true
+    parentSlotId: '16691243200270.9946646200359923'
+    index: 2
+  - id: '16691243200330.8183225126202063'
+    definitionId: atomicNumber
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicNumber2
+      prop: amount
+      primaryKey: false
+      width: 60
+      filter: true
+    parentSlotId: '16691243200270.9946646200359923'
+    index: 3
+  - id: '16691243225110.48038578978001834'
+    definitionId: atomicNumber
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicNumber3
+      prop: id
+      primaryKey: true
+    parentSlotId: '16691243225070.5368886962907888'
+    index: 0
+  - id: '16691243225110.7012560719024805'
+    definitionId: atomicString
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicString2
+      prop: check_number
+      primaryKey: true
+    parentSlotId: '16691243225070.5368886962907888'
+    index: 1
+  - id: '16691243225110.20349240182147676'
+    definitionId: atomicDateTime
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicDateTime2
+      prop: paid_at
+      primaryKey: false
+      timeFormat:
+        value: ''
+        dataValue: HH:mm
+        withData: false
+    parentSlotId: '16691243225070.5368886962907888'
+    index: 2
+  - id: '16691243225110.7958560344430636'
+    definitionId: atomicNumber
+    styles:
+      xl:
+        visible: true
+    properties:
+      name: atomicNumber4
+      prop: amount
+      primaryKey: false
+    parentSlotId: '16691243225070.5368886962907888'
+    index: 3
