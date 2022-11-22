@@ -1,0 +1,86 @@
+id: '16691242745450.9490087798722435'
+name: orders
+nameConfigured: true
+steps:
+  - id: '16691242745450.988932725247945'
+    type: customSQLQuery
+    params:
+      - type: query
+        value: select * from orders;
+        valueType: interpolatedValue
+      - type: datasourceId
+        value: kXNmCC8v13
+        valueType: custom
+        mustSelectFirst: true
+      - type: preparedQuery
+        value: select * from orders;
+        valueType: interpolatedValue
+      - type: preparedQueryParams
+        value: []
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+type:
+  returnType:
+    - name: id
+      type: number
+      humanizedName: Id
+      primaryKey: true
+    - name: created_at
+      type: string
+      humanizedName: Created at
+      primaryKey: false
+    - name: required_at
+      type: string
+      humanizedName: Required at
+      primaryKey: false
+    - name: shipped_at
+      type: string
+      humanizedName: Shipped at
+      primaryKey: false
+    - name: status
+      type: string
+      humanizedName: Status
+      primaryKey: false
+    - name: comments
+      type: string
+      humanizedName: Comments
+      primaryKey: false
+    - name: user_id
+      type: number
+      humanizedName: User id
+      primaryKey: true
+  returnValue: null
+  returnValueTypeSnapshot: array
+mode: auto
+modeConfigured: false
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.orders.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.orders.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.orders.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+assigned: false
+selected: true
+configured: true
+index: 0
