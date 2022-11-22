@@ -1,0 +1,88 @@
+id: '16691241067410.5051079609954852'
+name: loadCategories
+nameConfigured: true
+steps:
+  - id: '16691241106340.7334088517219619'
+    type: LOAD_COLLECTION
+    params:
+      - type: datasourceId
+        value: kXNmCC8v13
+        valueType: custom
+        mustSelectFirst: true
+      - type: resourceId
+        value: 6dcc325f-f8e3-4942-bdfa-fa26cce13bb5
+        valueType: custom
+        mustSelectFirst: true
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: sql
+        value: []
+        valueType: interpolatedValue
+      - type: additionalParams
+        value: []
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: false
+singleStep: true
+type:
+  returnType:
+    - name: code
+      type: string
+      humanizedName: Code
+      primaryKey: true
+    - name: description
+      type: string
+      humanizedName: Description
+      primaryKey: false
+    - name: html
+      type: string
+      humanizedName: Html
+      primaryKey: false
+    - name: image
+      type: string
+      humanizedName: Image
+      primaryKey: false
+  returnTypeName: Categories
+  returnValue: null
+  returnStepType: LOAD_COLLECTION
+  returnValueTypeSnapshot: array
+mode: auto
+modeConfigured: false
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadCategories.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadCategories.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadCategories.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+index: 0
