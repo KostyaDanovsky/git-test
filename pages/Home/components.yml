@@ -1,0 +1,19 @@
+slots:
+  - id: '1'
+    name: content
+    bindings: {}
+    parentPageId: '1'
+  - id: '2'
+    name: content
+    bindings: {}
+    parentComponentId: '1'
+components:
+  - id: '1'
+    definitionId: grid
+    parentSlotId: '1'
+    index: 0
+    styles: {}
+    properties:
+      name: grid
+      pageTitle: '{{app.name}} - {{activeRoute.name}}'
+    actions: {}
