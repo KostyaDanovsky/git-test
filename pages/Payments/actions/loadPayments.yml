@@ -7,14 +7,16 @@ steps:
     params:
       - type: datasourceId
         value: kXNmCC8v13
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: resourceId
         value: fe7d3030-3577-498a-b260-dfdfb5d93d63
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: filters
-        value: []
+        value:
+          - column: id
+            operation: '='
+            value:
+              value: '{{ui.select.value}}'
         valueType: custom
       - type: ordering
         value:
@@ -27,11 +29,10 @@ steps:
           orderDirection:
             value: asc
         valueType: custom
-      - type: sql
-        value: []
-        valueType: interpolatedValue
       - type: additionalParams
-        value: []
+        value:
+          - name: ''
+            value: ''
         valueType: custom
       - type: successMapper
         value: ''
@@ -44,7 +45,7 @@ steps:
         valueType: custom
     level: 0
     fallthroughError: false
-    isChanged: false
+    isChanged: true
 singleStep: true
 type:
   returnType:
