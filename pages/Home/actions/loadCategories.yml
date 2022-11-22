@@ -86,4 +86,4 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
 assigned: false
-index: 1
+index: 2
