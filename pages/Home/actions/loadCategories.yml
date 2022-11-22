@@ -85,4 +85,5 @@ config:
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
-index: 0
+assigned: false
+index: 1

@@ -65,7 +65,6 @@ type:
   returnValueTypeSnapshot: array
 mode: auto
 modeConfigured: false
-parentPageId: '1'
 folder: false
 config:
   shouldConfirm: false
